@@ -1,0 +1,3 @@
+[submodule "modulos/matematicas"]
+	path = modulos/matematicas
+	url = https://github.com/pblast/matematicas.git
