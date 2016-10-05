@@ -26,13 +26,13 @@ SOBJS:=saludos
 #*******************************************************************************
 # DIRECTORIOS
 
-LIBPATH=$(wildcard /modules/**)
-LIBINCDIR=$(wildcard modules/**/inc)
-LIBOBJDIR=$(wildcard /modules/**/obj)
-LIBBINDIR=$(wildcard modules/**/bin)
+LIBPATH=$(wildcard /modulos/**)
+LIBINCDIR=$(wildcard modulos/**/inc)
+LIBOBJDIR=$(wildcard /modulos/**/obj)
+LIBBINDIR=$(wildcard modulos/**/bin)
 
 #LIBS:=$(dir $(wildcard modules/**))
-LIBS=$(shell find modules -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
+LIBS=$(shell find modulos -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
 # #ARCHIVOS
 # SRCS:=$(wildcard $(SRCDIR)/*.c)
 # OBJS:=$(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
@@ -137,7 +137,7 @@ listlib:
 	@echo  --------------
 
 mod1:
-	$(MAKE) -C modules/mod1
+	$(MAKE) -C modulos/matematicas
 	@echo "Compilado MOD1!!"
 	
 despedidas:

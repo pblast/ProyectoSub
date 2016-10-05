@@ -39,7 +39,7 @@
 #define MAJOR_VER 0
 #define MINOR_VER 0
 #define PATCH_VER 0
-#define BUILD_VER 28
+#define BUILD_VER 29
 
 #define FECHA_VER "08/09/2016"
 /*********************************************************************/
